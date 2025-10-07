@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciclo de Vida no Git</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .estado {
+            background: #fff;
+            border-left: 6px solid #4CAF50;
+            padding: 10px 20px;
+            margin: 15px 0;
+            box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        }
+        .estado h2 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .ciclo {
+            margin-top: 30px;
+            padding: 15px;
+            background: #e0e0e0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ciclo de Vida de um Arquivo no Git</h1>
+
+    <div class="estado">
+        <h2>1. Untracked (Não Rastreado)</h2>
+        <p>O arquivo ainda não está sendo monitorado pelo Git. É novo no projeto.</p>
+    </div>
+
+    <div class="estado">
+        <h2>2. Modified (Modificado)</h2>
+        <p>O arquivo já foi commitado antes, mas sofreu alterações após isso.</p>
+    </div>
+
+    <div class="estado">
+        <h2>3. Staged (Preparado)</h2>
+        <p>O arquivo foi adicionado com <code>git add</code> e está pronto para ser commitado.</p>
+    </div>
+
+    <div class="estado">
+        <h2>4. Committed (Commitado)</h2>
+        <p>As mudanças foram salvas no histórico do repositório com <code>git commit</code>.</p>
+    </div>
+
+    <div class="ciclo">
+        <strong>Fluxo completo:</strong><br>
+        Untracked → Modified → Staged → Committed
+    </div>
+
+</body>
+</html>
